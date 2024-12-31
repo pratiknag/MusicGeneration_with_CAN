@@ -24,7 +24,7 @@ To train the Unrolled CAN model on the dataset, the file `GAN_reconstructed.ipyn
 
 To train the second-best model, the DCGAN, the folder `GAN_models` should be accessed, and the file `GAN-Copy2.ipynb` must be run. Before execution, the proper folder path containing the image representation of the MIDI datasets should be specified in the `GAN-Copy2.ipynb` file. Some generated results for both models have been uploaded to their respective folders.
 
-The `novelty_score.ipynb` file has been utilized to calculate the novelty score, as discussed in [Aljundi et al., 2017](https://www.aclweb.org/anthology/D17-1229). This file is located in the home directory.
+The `novelty_score.ipynb` file has been utilized to calculate the novelty score. This file is located in the home directory.
 
 The datasets used in this work are publicly available:  
 [Jazz MIDI Dataset](https://www.kaggle.com/saikayala/jazz-ml-ready-midi) and [Classical MIDI Dataset](https://www.kaggle.com/soumikrakshit/classical-music-midi).
