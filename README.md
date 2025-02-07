@@ -64,4 +64,4 @@ Unrolled_CAN/
 
 If you use this code, please cite:  
 
-@article{unrolled_can_nag, author = {Your Name and Co-authors}, title = {Unrolled Creative Adversarial Network Generating Novel Musical Pieces}, journal = {arXiv preprint}, year = {2025}, url = {https://arxiv.org/abs/2501.00452} }
+@article{unrolled_can_nag, author = {Pratik Nag}, title = {Unrolled Creative Adversarial Network Generating Novel Musical Pieces}, journal = {arXiv preprint}, year = {2025}, url = {https://arxiv.org/abs/2501.00452} }
