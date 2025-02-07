@@ -1,30 +1,47 @@
+# Unrolled Creative Adversarial Network for Generating Novel Musical Pieces  
 
-# Unrolled Creative Adversarial Network Generating Novel Musical Pieces
+## Overview  
 
-## Overview
+This repository provides an implementation of the **Unrolled Creative Adversarial Network (CAN)**, designed to generate novel musical compositions. By leveraging deep learning techniques, CAN produces innovative and contextually meaningful music. The model incorporates multiple layers and iterative training processes to generate original pieces across various musical styles.  
 
-This project implements the **Unrolled Creative Adversarial Network (CAN)** designed to generate novel musical pieces. CAN uses deep learning to create music that is both innovative and contextually meaningful. The network consists of multiple layers and training iterations, allowing it to produce original compositions in a variety of styles.
+**Paper Link:** [arXiv:2501.00452](https://arxiv.org/abs/2501.00452)  
 
-## Features
+## Features  
 
-- **Generative Model:** CAN uses a combination of generative adversarial networks (GANs) and creative unrolling techniques to enhance the creativity of generated musical pieces.
-- **Novelty in Music:** The network is designed to produce music that is unique and distinctive from existing works.
-- **Multi-Style Support:** The CAN model can be trained on various genres, producing music that fits within different musical styles.
-- **Interactive Interface:** The model supports real-time input, allowing users to modify the style, genre, or mood of the generated music.
+- **Generative Model:** Utilizes a combination of Generative Adversarial Networks (GANs) and creative unrolling techniques to enhance musical creativity.  
+- **Novel Music Generation:** Produces compositions that are unique and distinct from existing works.  
+- **Multi-Genre Adaptability:** Supports training on various musical genres, enabling the generation of style-specific pieces.  
+- **Interactive Interface:** Allows real-time modifications of style, genre, and mood for user-customized music generation.  
 
-## Requirements
+## Requirements  
 
-- Python 3.7+
-- TensorFlow 
-- NumPy
+- Python 3.7+  
+- TensorFlow  
+- NumPy  
 
-## Reproducing the Results
+## Reproducing the Results  
 
-To train the Unrolled CAN model on the dataset, the file `GAN_reconstructed.ipynb` located in the folder `CAN_models` should be executed. Sample data has been provided in the `classical_data_midi` folder. The files `training.py` and `model.py` contain all the model-related configurations. MIDI datasets can be preprocessed into images using the `data_pre_processing.ipynb` file.
+### Training the Unrolled CAN Model  
+To train the **Unrolled CAN model**, execute the `GAN_reconstructed.ipynb` file located in the `CAN_models` folder. Sample data is available in the `classical_data_midi` directory. The core model configurations are in `training.py` and `model.py`. MIDI datasets can be preprocessed into images using `data_pre_processing.ipynb`.  
 
-To train the second-best model, the DCGAN, the folder `GAN_models` should be accessed, and the file `GAN-Copy2.ipynb` must be run. Before execution, the proper folder path containing the image representation of the MIDI datasets should be specified in the `GAN-Copy2.ipynb` file. Some generated results for both models have been uploaded to their respective folders.
+### Training the DCGAN Model  
+For training the **DCGAN model**, navigate to the `GAN_models` folder and execute `GAN-Copy2.ipynb`. Ensure the correct dataset path is specified before running the script. Sample outputs for both models are included in their respective directories.  
 
-The `novelty_score.ipynb` file has been utilized to calculate the novelty score. This file is located in the home directory.
+### Evaluating Novelty Scores  
+To evaluate **novelty scores**, run the `novelty_score.ipynb` script located in the home directory.  
 
-The datasets used in this work are publicly available:  
-[Jazz MIDI Dataset](https://www.kaggle.com/saikayala/jazz-ml-ready-midi) and [Classical MIDI Dataset](https://www.kaggle.com/soumikrakshit/classical-music-midi).
+## Datasets  
+
+The datasets used in this study are publicly available:  
+- [Jazz MIDI Dataset](https://www.kaggle.com/saikayala/jazz-ml-ready-midi)  
+- [Classical MIDI Dataset](https://www.kaggle.com/soumikrakshit/classical-music-midi)  
+
+## Repository Structure  
+
+📂 Unrolled_CAN/ │ ├── 📂 CAN_models/ # Contains CAN model scripts │ ├── GAN_reconstructed.ipynb # Main training script for Unrolled CAN │ ├── training.py # Training configurations │ ├── model.py # Model architecture │ ├── 📂 GAN_models/ # Contains DCGAN model scripts │ ├── GAN-Copy2.ipynb # DCGAN training script │ ├── 📂 classical_data_midi/ # Sample MIDI dataset │ ├── 📂 datasets/ # Additional dataset directory │ ├── 📂 results/ # Stores generated music and logs │ ├── novelty_score.ipynb # Novelty evaluation script ├── data_pre_processing.ipynb # Preprocessing script for MIDI datasets ├── requirements.txt # Required dependencies ├── README.md # Project documentation
+
+## Citation  
+
+If you use this code, please cite:  
+
+@article{unrolled_can_nag, author = {Your Name and Co-authors}, title = {Unrolled Creative Adversarial Network Generating Novel Musical Pieces}, journal = {arXiv preprint}, year = {2025}, url = {https://arxiv.org/abs/2501.00452} }
