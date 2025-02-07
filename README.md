@@ -38,7 +38,27 @@ The datasets used in this study are publicly available:
 
 ## Repository Structure  
 
-📂 Unrolled_CAN/ │ ├── 📂 CAN_models/ # Contains CAN model scripts │ ├── GAN_reconstructed.ipynb # Main training script for Unrolled CAN │ ├── training.py # Training configurations │ ├── model.py # Model architecture │ ├── 📂 GAN_models/ # Contains DCGAN model scripts │ ├── GAN-Copy2.ipynb # DCGAN training script │ ├── 📂 classical_data_midi/ # Sample MIDI dataset │ ├── 📂 datasets/ # Additional dataset directory │ ├── 📂 results/ # Stores generated music and logs │ ├── novelty_score.ipynb # Novelty evaluation script ├── data_pre_processing.ipynb # Preprocessing script for MIDI datasets ├── requirements.txt # Required dependencies ├── README.md # Project documentation
+Unrolled_CAN/
+│
+├── CAN_models/                   # Contains CAN model scripts  
+│   ├── GAN_reconstructed.ipynb    # Main training script for Unrolled CAN  
+│   ├── training.py                # Training configurations  
+│   ├── model.py                   # Model architecture  
+│
+├── GAN_models/                    # Contains DCGAN model scripts  
+│   ├── GAN-Copy2.ipynb             # DCGAN training script  
+│
+├── classical_data_midi/            # Sample MIDI dataset  
+│
+├── datasets/                       # Additional dataset directory  
+│
+├── results/                        # Stores generated music and logs  
+│
+├── novelty_score.ipynb             # Novelty evaluation script  
+├── data_pre_processing.ipynb       # Preprocessing script for MIDI datasets  
+├── requirements.txt                # Required dependencies  
+├── README.md                       # Project documentation  
+
 
 ## Citation  
 
